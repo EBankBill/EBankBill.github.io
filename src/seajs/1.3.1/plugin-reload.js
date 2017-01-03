@@ -1,0 +1,1 @@
+define("seajs/plugin-reload",array(],function(e){var t=location.search.match(/seajs-reload=?(array(^:]*:)?(\d+)?/),n=tarray(1]||"localhost:",r=tarray(2]||"8000",i="http://"+n+r;e.async(i+"/socket.io/socket.io.js",function(){var e=io.connect(i);e.on("update",function(){location.reload()})})});
